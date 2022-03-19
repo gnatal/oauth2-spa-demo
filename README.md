@@ -1,34 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project is a standart Oauth2 implementation (just an SPA)
+It's a working in progress
 
-## Getting Started
+<p>
 
-First, run the development server:
+    This is an auth code default implementation, it uses PKCE to secure that the tokens are 
+    valid. This implementation does identity validation using clientSecret, if you use an SPA
+    this won't work because SPA's doesn't get clientSecrets (SPA's are insecure by default), but
+    you still can use this work to authenticate SPA's because uses PKCE
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br />
+<h1> Features </h1>
+<ol>
+    <li>Home page</li>
+    <li>Login page</li>
+    <li>Consent grant page</li>
+    <li>Profile page</li>
+</ol>
+<p> you must create an .env file to and set the following properties 
+    <br /> PORT=your_port
+    <br /> TOKEN_DURATION_SECONDS=your_seconds
+    <br /> DAY_IN_SECONDS=86400  
+    <br /> JWT_SECRET=a_jwt_secret  
+</p>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<h2>To do </h2>
+<ol>
+    <li> [] Home page</li>
+    <li> [] Login page</li>
+    <li> [] Consent grant page</li>
+    <li> [] Profile page</li>
+</ol>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<h2> Demonstration apps</h2>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<ol>
+    <li> Oauth server <a href="https://github.com/gnatal/oauth2"> click here! </a> as your authenticator and authorization</li>
+    <li> SPA usage <a href="https://github.com/gnatal/oauth2-spa-demo"> click here! </a>(as your main app)</li>
+    <li> Back-end <a href="https://github.com/gnatal/Oauth2-data-server"> click here! </a>Using as a data server</li>
+    <li> Back-end <a href=""> click here! </a>usage (as a third party app)</li>
+</ol>
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+<h1> License </h1>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+MIT License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Copyright (c) 2021 Natal
 
-## Deploy on Vercel
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

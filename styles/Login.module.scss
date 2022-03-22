@@ -1,0 +1,50 @@
+.login_box{
+    width: 90vw;
+    max-width: 600px;
+    margin: 80px auto;
+    border: 1px solid #222;
+    border-radius: 10px;
+    @media (max-width: 600px) {
+        width: 90vw;
+        margin: 80px auto;
+    }
+    
+}
+
+.login_box_text{
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+}
+
+.login_box_inputs {
+    border: none;
+    border-bottom: 0.1px solid #222;
+    padding: 10px 0 10px 0;
+    font-size: 1rem;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.login_box_inputs:focus{
+    outline: none;
+}
+
+.login_box_radio{
+    padding: 20px 0 20px 0;
+    font-size: 1.2rem;
+    width: 90%;
+    text-align: center;
+    margin-left: 4%;    
+}
+
+.login_box_button_box{
+    padding: 10px;
+    padding-bottom: 40px;
+    text-align: center;
+    width: 90%;
+}
+

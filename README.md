@@ -13,10 +13,11 @@ It's a working in progress
 <br />
 <h1> Features </h1>
 <ol>
-    <li>Home page</li>
-    <li>Login page</li>
-    <li>Consent grant page</li>
-    <li>Profile page</li>
+    <li> Home page</li>
+    <li> Login page</li>
+    <li> Consent grant page</li>
+    <li> Profile page</li>
+    <li> Internationalization</li>
 </ol>
 <p> you must create an .env file to and set the following properties 
     <br /> PORT=your_port
@@ -31,6 +32,7 @@ It's a working in progress
     <li> [] Login page</li>
     <li> [] Consent grant page</li>
     <li> [] Profile page</li>
+    <li> [x] Internationalization</li>
 </ol>
 
 <h2> Demonstration apps</h2>

@@ -20,10 +20,7 @@ It's a working in progress
     <li> Internationalization</li>
 </ol>
 <p> you must create an .env file to and set the following properties 
-    <br /> PORT=your_port
-    <br /> TOKEN_DURATION_SECONDS=your_seconds
-    <br /> DAY_IN_SECONDS=86400  
-    <br /> JWT_SECRET=a_jwt_secret  
+    <br /> OAUTH_URL=your_oauth_server_url
 </p>
 
 <h2>To do </h2>
